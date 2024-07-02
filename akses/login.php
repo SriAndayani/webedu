@@ -17,6 +17,9 @@ session_start();
         <input type="password" id="password" name="password" required>
         <br>
         <button type="submit">Login</button>
+        <div class="register">
+            <span>Don't have an account? <a href="register.php">Sign up now</a></span>
+        </div>
     </form>
 </body>
 </html>
