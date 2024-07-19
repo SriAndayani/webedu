@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // Mengimpor koneksi database yang sudah ada
+include 'connect.php'; // Mengimpor koneksi database yang sudah ada
 
 // Ambil data dari formulir
 $username = $_POST['username'];

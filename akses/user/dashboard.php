@@ -1,4 +1,10 @@
-
+<?
+// session_start();
+// if (!isset($_SESSION['user_id'])) {
+//     header("Location: login.php");
+//     exit;
+// }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,14 +31,14 @@
     />
 
     <!-- Flaticon Font -->
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+    <link href="../../lib/flaticon/font/flaticon.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="../../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="../../lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -57,31 +63,150 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarCollapse"
+        >
+          <div class="navbar-nav font-weight-bold mx-auto py-0">
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="class.html" class="nav-item nav-link">Classes</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
       </nav>
     </div>
     <!-- Navbar End -->
 
-    <!-- Header Start -->
-    <div class="container-fluid header bg-primary py-5 px-0 px-md-5 mb-5">
-      <div class="row align-items-center px-3">
-        <div class="col-lg-6 text-center text-lg-left">
-          <h4 class="text-white mb-4 mt-5 mt-lg-0">Learning Center</h4>
-          <h1 class="display-3 font-weight-bold text-white">
-          Learn to develop the web
-          </h1>
-          <p class="text-white mb-4">
-            Sea ipsum kasd eirmod kasd magna, est sea et diam ipsum est amet sed
-            sit. Ipsum dolor no justo dolor et, lorem ut dolor erat dolore sed
-            ipsum at ipsum nonumy amet. Clita lorem dolore sed stet et est justo
-            dolore.
+    <!-- Class Start -->
+    <div class="container-fluid pt-5">
+      <div class="container">
+        <div class="text-center pb-2">
+          <p class="section-title px-5">
+            <span class="px-2">Material</span>
           </p>
-          <a href="akses/login.php" class="btn btn-secondary mt-1 py-3 px-5">Start Learn</a>
+          <h1 class="mb-4">Our Course</h1>
         </div>
-        <div class="col-lg-6 text-center text-lg-right">
+        <div class="row">
+          <div class="col-lg-4 mb-5">
+            <div class="card border-0 bg-light shadow-sm pb-2">
+              <img class="card-img-top mb-2" src="../../img/class-1.jpg" alt="" />
+              <div class="card-body text-center">
+                <h4 class="card-title">FRONTEND</h4>
+                <p class="card-text">
+                Frontend adalah apa yang dilihat pengguna Anda dan menyertakan elemen visual seperti tombol, kotak centang, grafik, dan pesan teks. 
+                </p>
+              </div>
+              <a href="../../materi/frontend_page.php" class="btn btn-primary px-4 mx-auto mb-4">Start</a>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="card border-0 bg-light shadow-sm pb-2">
+              <img class="card-img-top mb-2" src="../../img/class-2.jpg" alt="" />
+              <div class="card-body text-center">
+                <h4 class="card-title">BACKEND</h4>
+                <p class="card-text">
+                Backend adalah data dan infrastruktur yang membuat aplikasi Anda berfungsi. Backend menyimpan dan memproses data aplikasi untuk pengguna Anda.
+                </p>
+              </div>
+              <a href="../../materi/backend_page.php" class="btn btn-primary px-4 mx-auto mb-4">Start</a>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-5">
+            <div class="card border-0 bg-light shadow-sm pb-2">
+              <img class="card-img-top mb-2" src="../../img/class-3.jpg" alt="" />
+              <div class="card-body text-center">
+                <h4 class="card-title">UI/UX Design</h4>
+                <p class="card-text">
+                User Interface (UI) dan User Experience (UX) merupakan komponen yang penting bagi sebuah website, aplikasi, maupun platform online lainnya.
+                </p>
+              </div>
+              <a href="../../materi/uiux_page.php" class="btn btn-primary px-4 mx-auto mb-4">Start</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Header End -->
+    <!-- Class End -->
+
+    <!-- Registration Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 mb-5 mb-lg-0">
+            <p class="section-title pr-5">
+              <span class="pr-2">Discussion</span>
+            </p>
+            <h1 class="mb-4">Forum Diskusi</h1>
+            <p>
+              Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo
+              dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo.
+              Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
+              dolor
+            </p>
+            <ul class="list-inline m-0">
+              <li class="py-2">
+                <i class="fa fa-check text-success mr-3"></i>Labore eos amet
+                dolor amet diam
+              </li>
+              <li class="py-2">
+                <i class="fa fa-check text-success mr-3"></i>Etsea et sit dolor
+                amet ipsum
+              </li>
+              <li class="py-2">
+                <i class="fa fa-check text-success mr-3"></i>Diam dolor diam
+                elitripsum vero.
+              </li>
+            </ul>
+            <a href="" class="btn btn-primary mt-4 py-2 px-4">Book Now</a>
+          </div>
+          <div class="col-lg-5">
+            <div class="card border-0">
+              <div class="card-header bg-secondary text-center p-4">
+                <h1 class="text-white m-0">Discussion</h1>
+              </div>
+              <div class="card-body rounded-bottom bg-primary p-5">
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control border-0 p-4"
+                      placeholder="Your Name"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control border-0 p-4"
+                      placeholder="Your Email"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <select
+                      class="custom-select border-0 px-4"
+                      style="height: 47px"
+                    >
+                      <option selected>Select A Class</option>
+                      <option value="1">Class 1</option>
+                      <option value="2">Class 1</option>
+                      <option value="3">Class 1</option>
+                    </select>
+                  </div>
+                  <div>
+                    <button
+                      class="btn btn-secondary btn-block border-0 py-3"
+                      type="submit"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Registration End -->
 
     <!-- Footer Start -->
     <div
